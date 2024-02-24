@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <img src="images/header.png" alt="iMessage Text Header">
+  </div>
+
+  <div class="chat-container">
+    <div class="chat other">
+      <button onclick="navigateTo('project1')">LinkedIn</button>
+    </div>
+    <div class="chat me">
+      <button onclick="navigateTo('project2')">Github</button>
+    </div>
+    <div class="chat other">
+      <button onclick="navigateTo('project3')">Email</button>
+    </div>
+  </div>
+
+  <form id="message-form" class="message-form" onsubmit="sendMessage(event)">
+    <input type="text" id="message-input" placeholder="Type a message...">
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="script.js"></script>
+
+
+
+</body>
+</html>
